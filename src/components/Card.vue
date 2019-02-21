@@ -19,7 +19,7 @@
                         <v-spacer></v-spacer>
                         <v-btn flat color="orange">
                             <!-- <router-link v-bind:to="{ name : 'item', query : { anime_id: item.anime_id }}">Show</router-link> -->
-                            <router-link v-bind:to="{ path : 'sanctuarie', query : { anime_id: item.anime_id }}">show</router-link>
+                            <router-link v-bind:to="{ path : 'sanctuaries', query : { anime_id: item.anime_id }}">show</router-link>
                         </v-btn>
                         <!-- <v-btn flat color="orange">Explore</v-btn> -->
                     </v-card-actions>
