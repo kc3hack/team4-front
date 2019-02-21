@@ -1,5 +1,5 @@
 <template>
-  <div>
+<div>
     <v-card-title class="headline font-weight-regular blue-grey white--text">
     SEITIMEGURI
     </v-card-title>
@@ -49,26 +49,37 @@ import axios from 'axios';
 
 @Component({
   components: {
-
     // Card,
     // List,
     // Board,
-  },
+  }
 })
 
 // import Vue from 'vue'
 export default class Sanctuaries extends Vue {
-    public param: string = "";
-    public obj: any;
-    // param = new URL(document.URL);
-    constructor (){
-        super();
-        // this.param = new URL(document.URL);
-        axios.get(document.URL).then(response => (this.param = response.data))
-        this.obj = JSON.parse(this.param);
-        // let json = '{"anime_id":1,"anime_name":"けいおん", "url":"http://www.tbs.co.jp/anime/k-on/k-on_tv/"}'
-        // this.obj = JSON.parse(json);
-    }
+
+  public param: string = "";
+  // param = new URL(document.URL);
+  constructor() {
+    super();
+    // this.param = new URL(document.URL);
+    axios.interceptors.request.use(request => {
+      console.log("Starting Request: ", request);
+      return request;
+    });
+
+    axios.interceptors.response.use(response => {
+      console.log("Response: ", response);
+      return response;
+    });
+
+    axios
+      .get(BASE_URL + "/sanctuaries")
+      .then(response => (this.param = response.data));
+  }
+  public test() {
+    alert(new URL(document.URL));
+  }
 }
 </script>
 
