@@ -5,31 +5,7 @@
       </v-card-title>
       <v-app id="inspire">
         <Selecter class="select center"/>
-        <!-- <ul style="list-style: none;">
-          <li v-for="item in items">
-            <v-flex xs12>
-            <v-card color="cyan darken-2" class="white--text">
-              <v-layout>
-                <v-flex xs5>
-                </v-flex>
-                <v-flex xs7>
-                  <v-card-title primary-title>
-                    <div>
-                      <div class="card-title">{{item.title}}</div>
-                      <div class="card-addr">{{item.address}}</div>
-                      <div class="card-homepage"></div>
-                    </div>
-                  </v-card-title>
-                </v-flex>
-              </v-layout>
-            </v-card>
-          </v-flex>
-
-          </li>
-        </ul> -->
         <Card/>
-        <!-- <List/> -->
-        
       </v-app>
   </div>
 </template>
