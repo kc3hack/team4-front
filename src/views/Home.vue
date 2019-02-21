@@ -5,17 +5,12 @@
       </v-card-title>
       <v-app id="inspire">
         <Selecter class="select center"/>
-        <ul style="list-style: none;">
+        <!-- <ul style="list-style: none;">
           <li v-for="item in items">
             <v-flex xs12>
             <v-card color="cyan darken-2" class="white--text">
               <v-layout>
                 <v-flex xs5>
-                  <v-img
-                    src="https://cdn.vuetifyjs.com/images/cards/foster.jpg"
-                    height="125px"
-                    contain
-                  ></v-img>
                 </v-flex>
                 <v-flex xs7>
                   <v-card-title primary-title>
@@ -31,8 +26,8 @@
           </v-flex>
 
           </li>
-        </ul>
-        <!-- <Card class="center"/> -->
+        </ul> -->
+        <Card/>
         <!-- <List/> -->
         
       </v-app>
@@ -57,7 +52,7 @@ import List from '@/components/List.vue';
   },
 })
 export default class Home extends Vue {
-  items = [
+  public items = [
     {
       title: 'title 1',
       address: 'address 1'
@@ -67,6 +62,9 @@ export default class Home extends Vue {
     },{
       title: 'title 3',
       address: 'address 3'
+    },{
+      title: 'title 4',
+      address: 'address '
     },
   ]
 }
