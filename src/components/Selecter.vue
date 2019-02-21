@@ -1,7 +1,9 @@
 <template>
   <div class="Selecter">
-    <span class="title" @click="showAnime">アニメ</span>
-    <span class="title" @click="showMap">マップ</span>
+    <span class="button">
+        <v-btn color="warning">マップ</v-btn>
+        <v-btn color="warning">アニメ</v-btn>
+    </span>
   </div>
 
 </template>

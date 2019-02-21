@@ -1,21 +1,22 @@
-<template>
+<template　class="board">
     <v-container grid-list-xl>
     <v-layout
       flex-child
       wrap
     >
-      <v-flex
+      <!-- <v-flex
         xs12
         md4
         d-flex
-      >
+      > -->
         <v-sheet
           class="d-flex"
-          color="grey lighten-3"
-          height="424"
+          color="yellow lighten-3"
+          height="600px"
+          min-width="800px"
         >
         </v-sheet>
-      </v-flex>
+      <!-- </v-flex> -->
     </v-layout>
   </v-container>
 </template>
@@ -26,3 +27,6 @@ export default Vue.extend({
     
 })
 </script>
+
+<style>
+</style>

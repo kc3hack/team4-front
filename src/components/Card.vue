@@ -6,7 +6,7 @@
         <v-img
           :src="require('../assets/pic.png')"
           height="100px"
-          aspect-ratio="2"
+          aspect-ratio=""
         ></v-img>
 
         <v-card-title primary-title>
